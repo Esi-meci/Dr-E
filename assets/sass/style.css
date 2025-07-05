@@ -780,6 +780,10 @@ img {
   z-index: 1;
 }
 
+@media(max-width:){
+  
+}
+
 @media (max-width: 767px) {
   .wpo-page-title {
     min-height: 250px;
