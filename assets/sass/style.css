@@ -770,6 +770,7 @@ img {
   background-color: #59C378;
 }
 
+
 .wpo-page-title {
   background: url(../images/page-title2.jpg) no-repeat center top/cover;
   min-height: 350px;
@@ -780,8 +781,10 @@ img {
   z-index: 1;
 }
 
-@media(max-width:){
-  
+@media(max-width:600px) {
+  .wpo-page-title {
+    background: url(../images/page-title4.jpg) no-repeat center top/cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -9239,6 +9242,7 @@ img {
 .add {
   margin: 1rem;
 }
+
 @media (max-width:586px) {
   .adds {
     display: none;
