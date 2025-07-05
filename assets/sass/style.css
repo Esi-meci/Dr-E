@@ -532,16 +532,18 @@ img {
   font-size: 1.0666666667rem;
 }
 
+
 .theme-btn:before,
 .view-cart-btn:before {
   position: absolute;
   right: 30px;
   top: 51%;
-  content: "\e628";
+  content: "";
   font-family: "themify";
   transform: translateY(-50%);
   font-size: 14px;
 }
+
 
 .theme-btn:after,
 .view-cart-btn:after {
@@ -2031,8 +2033,14 @@ img {
   display: flex;
   align-items: center;
   color: #fff;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-left: 2rem;
   font-family: "Futura PT";
+}
+
+#tog {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .wpo-site-header .navbar-brand.site-logo img {
@@ -2078,6 +2086,7 @@ img {
 
 .wpo-site-header .row {
   width: 100%;
+  justify-content: space-between;
 }
 
 @media (max-width: 991px) {
@@ -9243,8 +9252,11 @@ img {
   margin: 1rem;
 }
 
-@media (max-width:586px) {
+@media (max-width:992px) {
   .adds {
     display: none;
+  }
+  .theme-btn:before {
+  content: "\e628";
   }
 }
