@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -52,6 +50,16 @@
 /*---------------------------
 	Fonts
 ----------------------------*/
+/* .static-hero */
+/* .wpo-about-area */
+/* .wpo-service-area */
+/* p */
+/* wpo-work-area */
+/* .wpo-testimonial-section */
+/* .wpo-testimonial-section .wpo-testimonial-wrap .wpo-testimonial-item .wpo-testimonial-text p */
+/* .wpo-testimonial-section .wpo-testimonial-wrap .wpo-testimonial-item .wpo-testimonial-text .wpo-testimonial-text-btm h3 span  */
+/* .wpo-header-style-1 .wpo-site-header .sticky-header.sticky-on, */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap");
 
 @font-face {
@@ -86,16 +94,18 @@ html {
 :root {
   scroll-behavior: unset;
 
-  
+  /* --main-bg: #191919; */
+  --main-bg: #fff;
   --Peony: #D1B8BD;
-  --Aloe : #C0C5B5;
-  --Dahlia : #E9DCB4;
-  --Teak : #AB917B;
+  --Aloe: #C0C5B5;
+  --Dahlia: #E9DCB4;
+  --Teak: #AB917B;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  color: #D8D8D8;
+  /* color: #D8D8D8; */
+  color: black;
   background-color: #fff;
   font-size: 16px;
   font-size: 1.0666666667rem;
@@ -108,9 +118,47 @@ body {
   }
 }
 
+/* Light Theme */
+body.light-theme {
+    background-color: var(--bg-color);
+    color: white;
+
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: whitesmoke;
+    color: black;
+    /* color: red; */
+
+
+}
+
+
+/* Theme toggle icon */
+#theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 1.5px;
+    right: 10px;
+    /* transition: color 10s ease; */
+    /* color: white; */
+}
+
+.theme {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 p {
   font-size: 16px;
-  color: #D8D8D8;
+  /* color: #D8D8D8; */
+  color: black;
   line-height: 1.8em;
 }
 
@@ -467,7 +515,7 @@ img {
   position: relative;
   font-family: "Futura PT";
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   display: inline-block;
   padding-bottom: 20px;
   position: relative;
@@ -500,10 +548,13 @@ img {
   }
 }
 
+.wpo-section-title p{
+  color: #D8D8D8;
+
+}
 .wpo-section-title p,
 .wpo-section-title-s2 p {
   font-size: 18px;
-  color: #D8D8D8;
   margin-bottom: 0;
 }
 
@@ -553,7 +604,7 @@ img {
   position: absolute;
   content: "";
   top: 0;
-  
+
   left: 0;
   border-radius: 40px;
   width: 100%;
@@ -1685,7 +1736,8 @@ img {
 .wpo-shop-sidebar .widget_product_categories .woocommerce-widget-layered-nav-list a,
 .wpo-shop-sidebar .woocommerce-widget-layered-nav .product-categories a,
 .wpo-shop-sidebar .woocommerce-widget-layered-nav .woocommerce-widget-layered-nav-list a {
-  color: #585858;
+  /* color: #585858; */
+  color: #000;
 }
 
 .wpo-shop-sidebar .widget_product_categories .product-categories,
@@ -3252,12 +3304,14 @@ img {
 
 .wpo-header-style-1 .wpo-site-header #navbar>ul>li>a,
 .wpo-header-style-2 .wpo-site-header #navbar>ul>li>a {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .wpo-header-style-1 .wpo-site-header .header-right .search-toggle-btn .fi,
 .wpo-header-style-2 .wpo-site-header .header-right .search-toggle-btn .fi {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .wpo-header-style-1 .wpo-site-header .header-right .theme-btn,
@@ -3355,7 +3409,8 @@ img {
 
 .wpo-header-style-1 .wpo-site-header .sticky-header.sticky-on,
 .wpo-header-style-2 .wpo-site-header .sticky-header.sticky-on {
-  background: #131313;
+  /* background: #131313; */
+  background-color: var(--main-bg);
 }
 
 .wpo-header-style-2 .wpo-site-header {
@@ -3375,7 +3430,8 @@ img {
   display: flex;
   position: relative;
   z-index: 0;
-  background: #131313;
+  background: (var(--main_bg));
+  /* background: #131313; */
 }
 
 @media (max-width: 991px) {
@@ -3800,7 +3856,7 @@ img {
 	hero style 1
 --------------------------------------------*/
 .static-hero {
-  background: #131313;
+  /* background: #131313; */
   height: 940px;
   display: flex;
   position: relative;
@@ -4404,9 +4460,11 @@ img {
 --------------------------------------------------------------*/
 .wpo-site-footer,
 .wpo-site-footer-s2 {
-  background-color: #202020;
+  /* background-color: #202020; */
+  background-color: var(--main-bg);
   position: relative;
   z-index: 1;
+  color: black !important;
   /*** upper contact area ***/
   /*** about-widget ***/
   /*** link-widget ***/
@@ -4424,7 +4482,7 @@ img {
 .wpo-site-footer li,
 .wpo-site-footer-s2 p,
 .wpo-site-footer-s2 li {
-  color: #fff;
+  color: #000 ;
 }
 
 .wpo-site-footer .upper-contact-area,
@@ -4494,7 +4552,7 @@ img {
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 1400px) {
@@ -4623,7 +4681,8 @@ img {
   font-size: 24px;
   font-size: 1.6rem;
   font-weight: blod;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   margin: 0;
   padding-bottom: 0.4em;
   text-transform: capitalize;
@@ -4673,7 +4732,8 @@ img {
   font-weight: 700;
   display: flex;
   align-items: center;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-family: "Futura PT";
 }
 
@@ -4720,7 +4780,8 @@ img {
 
 .wpo-site-footer .about-widget .social-icons ul a,
 .wpo-site-footer-s2 .about-widget .social-icons ul a {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .wpo-site-footer .about-widget .social-icons ul a:hover,
@@ -4769,7 +4830,8 @@ img {
 
 .wpo-site-footer .link-widget ul a,
 .wpo-site-footer-s2 .link-widget ul a {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .wpo-site-footer .link-widget ul a:hover,
@@ -4899,11 +4961,13 @@ img {
 /* 3.2 wpo-about-area */
 .wpo-about-area,
 .wpo-about-area-s2 {
-  background: #191919;
+  background: var(--main_bg);
+  /* background: #191919; */
   overflow: hidden;
   z-index: 1;
   position: relative;
   padding-bottom: 100px;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -5250,7 +5314,7 @@ img {
 /* 3.3 wpo-service-area */
 .wpo-service-area,
 .wpo-service-area-s2 {
-  background: #222121;
+  background: var(--main-bg);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -5300,14 +5364,14 @@ img {
 .wpo-service-area-s2 .wpo-service-wrap .nav-tabs .nav-item .nav-link {
   width: 250px;
   height: 65px;
-  background: #373737;
+  /* background: #373737; */
   text-align: center;
   margin-right: 30px;
   border-radius: 38px;
   text-align: center;
   line-height: 65px;
   padding: 0;
-  color: #fff;
+  color: black;
   border: 2px solid transparent;
   font-weight: 700;
   font-size: 22px;
@@ -5470,7 +5534,7 @@ img {
 /* 3.4 wpo-work-area  */
 .wpo-work-area,
 .wpo-work-area-s2 {
-  background: #191919;
+  background: var(--main-bg);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -5754,6 +5818,7 @@ img {
 .wpo-project-area,
 .wpo-project-area-s2 {
   background: linear-gradient(180deg, #222121 0%, #191919 100%);
+  background: linear-gradient(180deg, #D1B8BD 0%, #C0C5B5 100% );
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -5997,7 +6062,8 @@ img {
 
 /* 3.6 wpo-testimonial-section */
 .wpo-testimonial-section {
-  background: #2C2C2C;
+  /* background: #2C2C2C; */
+  background: var(--main-bg);
   position: relative;
 }
 
@@ -6069,7 +6135,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #D8D8D8;
+  /* color: #D8D8D8; */
 }
 
 .wpo-testimonial-section .wpo-testimonial-wrap .wpo-testimonial-item .wpo-testimonial-text .wpo-testimonial-text-btm {
@@ -6102,7 +6168,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 17px;
-  color: #D8D8D8;
+  /* color: #D8D8D8; */
   display: block;
   margin-left: 10px;
   position: relative;
@@ -9260,7 +9326,11 @@ img {
   .adds {
     display: none;
   }
+  .t2 {
+    display: none;
+  }
+
   .theme-btn:before {
-  content: "\e628";
+    content: "\e628";
   }
 }

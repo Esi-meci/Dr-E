@@ -21,6 +21,14 @@
         })
     }
 
+    function toggle_theme(){
+        
+        const toggleButton = document.querySelector('.theme');
+        alert('clicked')
+        document.body.classList.toggle('dark-theme');
+
+    }
+    
     toggleMobileNavigation();
 
 
@@ -761,5 +769,15 @@
         }, 200));
     });
 
-
 })(window.jQuery);
+
+    // // smooth scrolling 
+    // window.scrollTo({
+    //     top: 500,
+    //     left: 0,
+    //     behavior: 'smooth',
+    // });
+
+    // theme toggle 
+    
+
