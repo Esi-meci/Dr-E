@@ -109,7 +109,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   color: black;
   background-color: #fff;
   font-size: 16px;
@@ -158,7 +158,7 @@ body.dark-theme {
 
 p {
   font-size: 16px;
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   color: var(--main-text);
   line-height: 1.8em;
 }
@@ -545,7 +545,7 @@ img {
 }
 
 .wpo-section-title p {
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   color: var(--main-text);
 }
 .wpo-section-title p,
@@ -847,7 +847,8 @@ img {
 
 .wpo-page-title .wpo-breadcumb-wrap h2 {
   font-size: 60px;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--main-text);
   line-height: 60px;
   margin-top: -10px;
   margin-bottom: 20px;
@@ -870,7 +871,8 @@ img {
 .wpo-page-title .wpo-breadcumb-wrap ol li {
   display: inline-block;
   padding: 0px 5px;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--Teak);
   position: relative;
   font-size: 20px;
   font-family: "Futura PT";
@@ -897,7 +899,8 @@ img {
 }
 
 .wpo-page-title .wpo-breadcumb-wrap ol li a {
-  color: #fff;
+  /* color: #fff; */
+  color: var(--Teak);
   font-size: 20px;
   transition: all 0.3s;
 }
@@ -1187,7 +1190,7 @@ img {
 
 .blog-sidebar .about-widget {
   text-align: center;
-  background-color: #2c2c2c;
+  background-color: #dfdddd;
   padding: 45px;
   position: relative;
   z-index: 1;
@@ -1293,7 +1296,8 @@ img {
 
 .blog-sidebar .category-widget ul a {
   display: block;
-  color: #d8d8d8;
+  /* color: var(--Teak); */
+  color: #ab917b;
   font-size: 16px;
   font-weight: 600;
 }
@@ -1369,7 +1373,8 @@ img {
 
 .blog-sidebar .recent-post-widget .post h4 a {
   display: inline-block;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--main-text);
 }
 
 .blog-sidebar .recent-post-widget .post h4 a:hover {
@@ -1379,7 +1384,8 @@ img {
 .blog-sidebar .recent-post-widget .post .details .date {
   font-size: 13px;
   font-size: 0.8666666667rem;
-  color: #d8d8d8;
+  /* color: var(--Teak); */
+  color: var(--Teak);
 }
 
 .blog-sidebar .recent-post-widget .post .details .date i {
@@ -1406,18 +1412,21 @@ img {
 
 .blog-sidebar .wpo-newsletter-widget p {
   font-size: 18px;
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   color: var(--main-text);
   text-align: left;
 }
 
 .blog-sidebar .wpo-newsletter-widget span {
   font-size: 15px;
-  color: #d8d8d8;
+  /* color: var(--Teak); */
+  color: #ab917b;
+  
 }
 
 .blog-sidebar .wpo-newsletter-widget span a {
-  color: #d8d8d8;
+  /* color: var(--Teak); */
+  color: var(--main-text);
   font-weight: 700;
 }
 
@@ -1444,15 +1453,15 @@ img {
 
 .blog-sidebar .wpo-newsletter-widget .form input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .blog-sidebar .wpo-newsletter-widget .form input::-moz-placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .blog-sidebar .wpo-newsletter-widget .form input::placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .blog-sidebar .wpo-newsletter-widget .form button {
@@ -5153,7 +5162,7 @@ img {
 .wpo-about-area-s2 .wpo-about-exprience-wrap .wpo-about-exprience h2 {
   font-size: 140px;
   font-weight: 700;
-  color: var(--Peony);
+  color: var(--main-bg);
 }
 
 @media (max-width: 575px) {
@@ -5166,7 +5175,7 @@ img {
 .wpo-about-area .wpo-about-exprience-wrap .wpo-about-exprience span,
 .wpo-about-area-s2 .wpo-about-exprience-wrap .wpo-about-exprience span {
   font-size: 18px;
-  color: #fff;
+  color: var(--main-bg);
 }
 
 .wpo-about-area .wpo-about-exprience-wrap .client,
@@ -5251,7 +5260,7 @@ img {
 
 .wpo-about-area .wpo-about-content .wpo-about-title p,
 .wpo-about-area-s2 .wpo-about-content .wpo-about-title p {
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   color: var(--main-text);
 }
 
@@ -5615,7 +5624,7 @@ img {
 
 .wpo-service-area .wpo-service-wrap .wpo-service-item p,
 .wpo-service-area-s2 .wpo-service-wrap .wpo-service-item p {
-  color: #d8d8d8;
+  color: var(--Teak);
   margin: 25px 0;
 }
 
@@ -6112,7 +6121,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-project-area .wpo-project-wrap .wpo-project-item .wpo-project-img,
@@ -6308,7 +6317,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
 }
 
 .wpo-testimonial-section
@@ -6365,7 +6374,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 17px;
-  /* color: #D8D8D8; */
+  /* color: var(--Teak); */
   display: block;
   margin-left: 10px;
   position: relative;
@@ -6926,7 +6935,7 @@ img {
   h2
   span {
   font-weight: 500;
-  color: #d8d8d8;
+  color: var(--Teak);
   font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
@@ -6943,7 +6952,7 @@ img {
   max-width: 282px;
   margin: 0 auto;
   border-bottom: 1px solid #496451;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item .wpo-pricing-bottom {
@@ -6968,7 +6977,7 @@ img {
   .wpo-pricing-bottom-text
   ul
   li {
-  color: #d8d8d8;
+  color: var(--Teak);
   padding-bottom: 15px;
 }
 
@@ -7404,6 +7413,7 @@ img {
 ======================================================*/
 .wpo-service-single-area {
   background: #222121;
+  background: var(--bg-color);
 }
 
 .wpo-service-single-area .wpo-service-single-wrap .wpo-service-single-title h3 {
@@ -7585,7 +7595,7 @@ img {
   border-bottom: 0;
   border-radius: 0;
   background: #2c2c2c;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-service-single-area
@@ -7603,7 +7613,7 @@ img {
   .wpo-contact-form-area
   .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-service-single-area
@@ -7611,7 +7621,7 @@ img {
   .wpo-service-contact-area
   .wpo-contact-form-area
   .form-control::-moz-placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-service-single-area
@@ -7619,7 +7629,7 @@ img {
   .wpo-service-contact-area
   .wpo-contact-form-area
   .form-control::placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-service-single-area
@@ -7783,7 +7793,7 @@ img {
 
 .gallery-filters ul li a {
   font-weight: 600;
-  color: #d8d8d8;
+  color: var(--Teak);
   display: block;
   text-transform: capitalize;
 }
@@ -8008,14 +8018,15 @@ img {
 }
 
 .wpo-protfolio-area-3 .wpo-protfolio-text span {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 /*=====================================================
 8. wpo-project-single
 ======================================================*/
 .wpo-project-single-area {
-  background: #222121;
+  background: var(--main-bg);
+  /* background: #222121; */
 }
 
 .wpo-project-single-area .wpo-project-single-wrap .wpo-project-single-title h3 {
@@ -8145,7 +8156,7 @@ img {
   flex-basis: 35%;
   margin-left: auto;
   margin-bottom: 50px;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:  -1px -1px 12px rgba(56, 55, 55, 0.2), 5px 6px 17px 5px rgba(75, 75, 75, 0.19);
 }
 
 @media (max-width: 1200px) {
@@ -8213,7 +8224,7 @@ img {
   li
   span {
   flex-basis: 60%;
-  color: #d8d8d8;
+  color: var(--main-text);
   font-weight: 400;
 }
 
@@ -8271,7 +8282,7 @@ img {
   .wpo-project-single-wrap
   .wpo-project-single-item-quote {
   padding: 45px;
-  background: #131313;
+  background: var(--component_Color);
   text-align: center;
   border-radius: 15px;
 }
@@ -8291,10 +8302,12 @@ img {
   p {
   font-size: 22px;
   margin-bottom: 30px;
-  color: #d8d8d8;
+  color: var(--main-bg);
   line-height: 44px;
 }
-
+.wpo-project-single-item-quote span{
+  color: var(--main-bg);
+}
 @media (max-width: 991px) {
   .wpo-project-single-area
     .wpo-project-single-wrap
@@ -8370,7 +8383,7 @@ img {
   border-bottom: 0;
   border-radius: 0;
   background: #2c2c2c;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-project-single-area
@@ -8388,7 +8401,7 @@ img {
   .wpo-contact-form-area
   .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-project-single-area
@@ -8396,7 +8409,7 @@ img {
   .wpo-project-contact-area
   .wpo-contact-form-area
   .form-control::-moz-placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-project-single-area
@@ -8404,7 +8417,7 @@ img {
   .wpo-project-contact-area
   .wpo-contact-form-area
   .form-control::placeholder {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-project-single-area
@@ -8509,7 +8522,8 @@ img {
 9. wpo-blog-pg-section
 --------------------------------------------------------------*/
 .wpo-blog-pg-section {
-  background: #222121;
+  /* background: #222121; */
+  background: var(--bg-color);
   /*** format-standard ***/
   /*** format-gallery ***/
   /*** format-quote ***/
@@ -8563,7 +8577,8 @@ img {
 }
 
 .wpo-blog-pg-section .entry-meta ul li a {
-  color: #d8d8d8;
+  /* color: var(--Teak); */
+  color: var(--Teak);
 }
 
 .wpo-blog-pg-section .entry-meta ul li a:hover {
@@ -8651,7 +8666,8 @@ img {
 }
 
 .wpo-blog-pg-section .post h3 a {
-  color: #fff;
+  /* color: #fff; */
+  color: var(--main-text);
 }
 
 .wpo-blog-pg-section .post h3 a:hover {
@@ -8671,7 +8687,7 @@ img {
 
 .wpo-blog-pg-section .post a.read-more {
   text-decoration: underline;
-  color: #d8d8d8;
+  color: var(--Teak);
   text-transform: uppercase;
   font-family: "Futura PT";
   font-size: 15px;
@@ -8688,7 +8704,7 @@ img {
 
 .wpo-blog-pg-section .format-standard,
 .wpo-blog-pg-section .format-quote {
-  background-color: #2c2c2c;
+  background-color: #dfdddd;
   padding: 25px 35px 45px;
 }
 
@@ -8936,7 +8952,7 @@ img {
 }
 
 .wpo-blog-single-section .entry-meta ul li a {
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-blog-single-section .entry-meta ul li a:hover {
@@ -9054,7 +9070,7 @@ img {
 
 .wpo-blog-single-section .post blockquote {
   background-color: #2c2c2c;
-  color: #d8d8d8;
+  color: var(--Teak);
   font-size: 19px;
   padding: 65px;
   margin-top: 60px;
@@ -9161,7 +9177,7 @@ img {
 .wpo-blog-single-section .tag-share .tag > span,
 .wpo-blog-single-section .tag-share-s2 .tag > span {
   font-family: "Futura PT";
-  color: #d8d8d8;
+  color: var(--Teak);
   font-weight: 600;
   display: inline-block;
   padding-right: 15px;
@@ -9185,7 +9201,7 @@ img {
   font-size: 0.8666666667rem;
   display: inline-block;
   padding: 5px 18px;
-  color: #d8d8d8;
+  color: var(--Teak);
   background: #2c2c2c;
   border-radius: 5px;
   font-weight: 600;
@@ -9217,7 +9233,7 @@ img {
   text-transform: capitalize;
   background: none;
   text-decoration: underline;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-blog-single-section .author-box {
@@ -9401,7 +9417,7 @@ img {
 .wpo-blog-single-section .more-posts .post-control-link {
   font-size: 14px;
   font-size: 0.9333333333rem;
-  color: #d8d8d8;
+  color: var(--Teak);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9517,7 +9533,7 @@ img {
 .wpo-blog-single-section .comments-area .comments-meta h4 span {
   font-size: 15px;
   font-size: 1rem;
-  color: #d8d8d8;
+  color: var(--Teak);
   font-weight: normal;
   text-transform: none;
   display: inline-block;
@@ -9581,7 +9597,7 @@ img {
   border-radius: 30px;
   box-shadow: none;
   transition: all 0.3s;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-blog-single-section .comment-respond form input:focus,
@@ -9667,7 +9683,8 @@ img {
 --------------------------------------------------------------*/
 .wpo-contact-pg-section {
   padding-bottom: 0px;
-  background: #222121;
+  /* background: #222121; */
+  background: var(--main-bg);
   position: relative;
   z-index: 1;
 }
@@ -9721,7 +9738,7 @@ img {
   box-shadow: none !important;
   padding-left: 25px;
   border: 1px solid #363636;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 @media (max-width: 991px) {
@@ -9737,7 +9754,7 @@ img {
 .wpo-contact-pg-section form textarea:focus {
   border-color: var(--Teak);
   background: transparent;
-  color: #d8d8d8;
+  color: var(--Teak);
 }
 
 .wpo-contact-pg-section form textarea {
@@ -9866,7 +9883,7 @@ img {
   text-align: center;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 40px;
-  background: #222121;
+  background:var(--component_Color);
 }
 
 .wpo-contact-pg-section .office-info .office-info-item .office-info-icon {
@@ -9877,6 +9894,13 @@ img {
   text-align: center;
   margin: 0 auto;
   border-radius: 50%;
+}
+.office-info-text{
+  color: white;
+}
+
+.office-info-text p{
+  color: white;
 }
 
 .wpo-contact-pg-section
