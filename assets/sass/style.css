@@ -72,6 +72,30 @@
 }
 
 @font-face {
+  font-family: Braker;
+  src: url("../fonts/Baskervville-VariableFont_wght.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: itel;
+  src: url("../fonts/lte50438.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comorant";
+  src: url("../fonts/CormorantGaramond-VariableFont_wght.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"),
     url("../fonts/FuturaPT-Heavy.woff") format("woff");
@@ -104,7 +128,7 @@ html {
   --Dahlia: #e9dcb4;
   --Teak: #ab917b;
   --main-text: rgb(14, 13, 13);
-  --component_Color: #382c23;
+  --component_Color: #ab917b;
 }
 
 body {
@@ -115,6 +139,16 @@ body {
   font-size: 16px;
   font-size: 1.0666666667rem;
   overflow-x: hidden;
+}
+.m-news {
+  color: white;
+}
+.m-news p {
+  color: white;
+}
+
+.m-news h2 {
+  font-family: Comorant !important;
 }
 
 @media (max-width: 767px) {
@@ -170,7 +204,8 @@ h4,
 h5,
 h6 {
   /* color: #fff; */
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
+  font-family: "Comorant";
   font-weight: 600;
 }
 
@@ -354,6 +389,7 @@ img {
   font-size: 30px;
   font-size: 2rem;
   color: var(--Teak);
+  font-family: Comorant;
   display: inline-block;
   -webkit-animation: rotating linear 2s infinite;
   animation: rotating linear 2s infinite;
@@ -420,7 +456,8 @@ img {
 
 /*** back to top **/
 .back-to-top {
-  background-color: rgba(89, 195, 120, 0.7);
+  /* background-color: rgba(89, 195, 120, 0.7); */
+  background-color: var(--Aloe);
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -512,7 +549,7 @@ img {
   line-height: 55px;
   margin: 0;
   position: relative;
-  font-family: "Futura PT";
+  font-family: "Comorant";
   font-weight: 700;
   /* color: #fff; */
   display: inline-block;
@@ -546,7 +583,7 @@ img {
 
 .wpo-section-title p {
   /* color: var(--Teak); */
-  color: var(--main-text);
+  /* color: ; */
 }
 .wpo-section-title p,
 .wpo-section-title-s2 p {
@@ -873,6 +910,7 @@ img {
   padding: 0px 5px;
   /* color: #fff; */
   color: var(--Teak);
+  font-family: Comorant;
   position: relative;
   font-size: 20px;
   font-family: "Futura PT";
@@ -901,12 +939,14 @@ img {
 .wpo-page-title .wpo-breadcumb-wrap ol li a {
   /* color: #fff; */
   color: var(--Teak);
+  font-family: Comorant;
   font-size: 20px;
   transition: all 0.3s;
 }
 
 .wpo-page-title .wpo-breadcumb-wrap ol li a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .preloader {
@@ -1265,6 +1305,7 @@ img {
 
 .blog-sidebar .about-widget a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .category-widget ul {
@@ -1323,6 +1364,7 @@ img {
 .blog-sidebar .category-widget ul a:hover,
 .blog-sidebar .category-widget ul li:hover:before {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .recent-post-widget .post {
@@ -1379,13 +1421,15 @@ img {
 
 .blog-sidebar .recent-post-widget .post h4 a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .recent-post-widget .post .details .date {
   font-size: 13px;
   font-size: 0.8666666667rem;
-  /* color: var(--Teak); */
+  /* color: var(--Teak); font-family: Comorant; */
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .recent-post-widget .post .details .date i {
@@ -1421,7 +1465,6 @@ img {
   font-size: 15px;
   /* color: var(--Teak); */
   color: #ab917b;
-  
 }
 
 .blog-sidebar .wpo-newsletter-widget span a {
@@ -1432,6 +1475,7 @@ img {
 
 .blog-sidebar .wpo-newsletter-widget span a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .wpo-newsletter-widget .form input {
@@ -1454,14 +1498,17 @@ img {
 .blog-sidebar .wpo-newsletter-widget .form input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .wpo-newsletter-widget .form input::-moz-placeholder {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .wpo-newsletter-widget .form input::placeholder {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .blog-sidebar .wpo-newsletter-widget .form button {
@@ -1674,9 +1721,10 @@ img {
 }
 
 .wpo-shop-sidebar .widget_price_filter .filter-price button {
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
   background: transparent;
   color: var(--Teak);
+  font-family: Comorant;
   font-size: 18px;
   font-size: 1.2rem;
   font-weight: 500;
@@ -2071,6 +2119,7 @@ img {
 
 .topbar .contact-info ul li a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .topbar ul li:first-child {
@@ -2234,6 +2283,7 @@ img {
 .wpo-site-header #navbar > ul li a:focus {
   text-decoration: none;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media screen and (min-width: 992px) {
@@ -2339,6 +2389,7 @@ img {
   .wpo-site-header #navbar ul a:hover,
   .wpo-site-header #navbar ul li.current a {
     color: var(--Teak);
+    font-family: Comorant;
   }
 
   .wpo-site-header #navbar .close-navbar .ti-close {
@@ -2715,6 +2766,7 @@ img {
 
 .mini-cart-content .mini-cart-item-des a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .mini-cart-content .mini-cart-item-des .mini-cart-item-price {
@@ -3186,6 +3238,7 @@ img {
   .wpo-site-header #navbar ul a:hover,
   .wpo-site-header #navbar ul li.current a {
     color: var(--Teak);
+    font-family: Comorant;
   }
 
   .wpo-site-header #navbar .navbar-nav {
@@ -3720,6 +3773,7 @@ img {
   font-size: 32px;
   line-height: 39px;
   color: var(--Teak);
+  font-family: Comorant;
   margin-bottom: 20px;
 }
 
@@ -4103,9 +4157,10 @@ img {
 
 .static-hero .slide-sub-title h5 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 1.5em !important;
   line-height: 39px;
   color: var(--Teak);
+  font-family: Comorant;
   margin-bottom: 20px;
 }
 
@@ -4144,6 +4199,7 @@ img {
   font-size: 19px;
   line-height: 33px;
   margin-bottom: 30px;
+  font-family: itel;
 }
 
 @media (max-width: 530px) {
@@ -4159,6 +4215,7 @@ img {
   right: 200px;
   z-index: 1;
   transform: translateY(-50%);
+  font-size: ;
 }
 
 .static-hero .static-hero-right img {
@@ -4305,6 +4362,7 @@ img {
 .static-hero .static-hero-right .project .icon .fi:before {
   font-size: 50px;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media (max-width: 575px) {
@@ -4572,7 +4630,8 @@ img {
 
 .wpo-site-footer .upper-contact-area .contact-grids,
 .wpo-site-footer-s2 .upper-contact-area .contact-grids {
-  background: #ff4155;
+  /* background: #ff4155; */
+  background: var(--Teak);
   padding: 80px 165px;
   position: relative;
   z-index: 1;
@@ -4599,7 +4658,8 @@ img {
   top: 0;
   width: 40%;
   height: 100%;
-  background: #ff4155;
+  /* background: #ff4155; */
+  background-color: #c7ae99;
   z-index: 1;
 }
 
@@ -4622,6 +4682,7 @@ img {
   font-size: 50px;
   line-height: 60px;
   color: #000;
+  font-family: Comorant;
 }
 
 @media (max-width: 1400px) {
@@ -4942,6 +5003,7 @@ img {
 .wpo-site-footer-s2 .link-widget ul a:hover,
 .wpo-site-footer-s2 .link-widget ul li:hover:before {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-site-footer .link-widget ul > li + li,
@@ -4964,7 +5026,7 @@ img {
 
 .wpo-site-footer .newsletter-widget form input,
 .wpo-site-footer-s2 .newsletter-widget form input {
-  background-color: #232925;
+  background-color: var(--Teak);
   height: 50px;
   color: #fff;
   padding: 6px 15px;
@@ -5227,6 +5289,7 @@ img {
   font-size: 45px;
   line-height: 28px;
   color: var(--Teak);
+  font-family: Comorant;
   flex-basis: 50%;
   margin-bottom: 0;
   margin-right: 10px;
@@ -5247,7 +5310,7 @@ img {
 .wpo-about-area .wpo-about-content .wpo-about-title h2,
 .wpo-about-area-s2 .wpo-about-content .wpo-about-title h2 {
   font-size: 48px;
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 20px;
 }
 
@@ -5348,7 +5411,9 @@ img {
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid .grid-inner p,
 .wpo-about-area-s2 .wpo-about-content .wpo-about-funfact .grid .grid-inner p {
   margin-bottom: 0;
-  color: var(--Peony);
+  /* color: var(--Peony); */
+  color: #000;
+  font-weight: bold;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(2),
@@ -5373,7 +5438,10 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: var(--Teak);
+  /* color: var(--Teak); */
+  color: black;
+  font-weight: bold;
+  /* font-family: Comorant; */
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(3),
@@ -5398,7 +5466,9 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: var(--Dahlia);
+  /* color: var(--Dahlia); */
+  color: #000;
+  font-weight: bold;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(4),
@@ -5423,7 +5493,7 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: #ff9a00;
+  color: #fff;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(5),
@@ -5448,7 +5518,8 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: #00a9ff;
+  /* color: #00a9ff; */
+  color: #fff;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(6),
@@ -5473,7 +5544,8 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: #ad00ff;
+  /* color: #ad00ff; */
+  color: #fff;
 }
 
 /* 3.3 wpo-service-area */
@@ -5591,7 +5663,7 @@ img {
   width: 120px;
   height: 120px;
   line-height: 120px;
-  background: #373737;
+  background: #fff;
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 50%;
@@ -5624,7 +5696,8 @@ img {
 
 .wpo-service-area .wpo-service-wrap .wpo-service-item p,
 .wpo-service-area-s2 .wpo-service-wrap .wpo-service-item p {
-  color: var(--Teak);
+  color: #fff;
+  font-family: Comorant;
   margin: 25px 0;
 }
 
@@ -6094,7 +6167,7 @@ img {
   .wpo-project-text
   h2
   a {
-  color: #fff;
+  color: #000;
 }
 
 .wpo-project-area
@@ -6110,6 +6183,7 @@ img {
   h2
   a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-project-area .wpo-project-wrap .wpo-project-item .wpo-project-text span,
@@ -6122,6 +6196,7 @@ img {
   font-size: 14px;
   line-height: 30px;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-project-area .wpo-project-wrap .wpo-project-item .wpo-project-img,
@@ -6172,6 +6247,7 @@ img {
   background: transparent;
   border: 1px solid var(--Teak);
   color: var(--Teak);
+  font-family: Comorant;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -6293,7 +6369,7 @@ img {
   font-weight: 500;
   font-size: 36px;
   line-height: 50px;
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 20px;
 }
 
@@ -6936,6 +7012,7 @@ img {
   span {
   font-weight: 500;
   color: var(--Teak);
+  font-family: Comorant;
   font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
@@ -6953,6 +7030,7 @@ img {
   margin: 0 auto;
   border-bottom: 1px solid #496451;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item .wpo-pricing-bottom {
@@ -6978,6 +7056,7 @@ img {
   ul
   li {
   color: var(--Teak);
+  font-family: Comorant;
   padding-bottom: 15px;
 }
 
@@ -6989,6 +7068,7 @@ img {
   a {
   font-size: 16px;
   color: var(--Teak);
+  font-family: Comorant;
   font-weight: 500;
   display: inline-block;
   margin-top: 20px;
@@ -7314,6 +7394,7 @@ img {
 .wpo-about-area-s2 .wpo-about-img .project .icon .fi:before {
   font-size: 50px;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media (max-width: 575px) {
@@ -7596,6 +7677,7 @@ img {
   border-radius: 0;
   background: #2c2c2c;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-service-single-area
@@ -7614,6 +7696,7 @@ img {
   .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-service-single-area
@@ -7622,6 +7705,7 @@ img {
   .wpo-contact-form-area
   .form-control::-moz-placeholder {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-service-single-area
@@ -7630,6 +7714,7 @@ img {
   .wpo-contact-form-area
   .form-control::placeholder {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-service-single-area
@@ -7794,6 +7879,7 @@ img {
 .gallery-filters ul li a {
   font-weight: 600;
   color: var(--Teak);
+  font-family: Comorant;
   display: block;
   text-transform: capitalize;
 }
@@ -7804,6 +7890,7 @@ img {
 
 .gallery-filters ul li a.current {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media (max-width: 500px) {
@@ -8015,10 +8102,12 @@ img {
 
 .wpo-protfolio-area-3 .wpo-protfolio-text h2 a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-protfolio-area-3 .wpo-protfolio-text span {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 /*=====================================================
@@ -8099,6 +8188,7 @@ img {
   margin: 0;
   border-radius: 50%;
   color: var(--Teak);
+  font-family: Comorant;
   transition: all 0.3s;
   border: 0;
 }
@@ -8156,7 +8246,8 @@ img {
   flex-basis: 35%;
   margin-left: auto;
   margin-bottom: 50px;
-  box-shadow:  -1px -1px 12px rgba(56, 55, 55, 0.2), 5px 6px 17px 5px rgba(75, 75, 75, 0.19);
+  box-shadow: -1px -1px 12px rgba(56, 55, 55, 0.2),
+    5px 6px 17px 5px rgba(75, 75, 75, 0.19);
 }
 
 @media (max-width: 1200px) {
@@ -8209,7 +8300,7 @@ img {
   display: flex;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 600;
   position: relative;
   justify-content: space-between;
@@ -8224,7 +8315,8 @@ img {
   li
   span {
   flex-basis: 60%;
-  color: var(--main-text);
+  color: var(--Teak);
+  font-weight: bold;
   font-weight: 400;
 }
 
@@ -8271,6 +8363,7 @@ img {
   font-family: "themify";
   text-align: center;
   color: var(--Teak);
+  font-family: Comorant;
   font-size: 14px;
 }
 
@@ -8305,7 +8398,7 @@ img {
   color: var(--main-bg);
   line-height: 44px;
 }
-.wpo-project-single-item-quote span{
+.wpo-project-single-item-quote span {
   color: var(--main-bg);
 }
 @media (max-width: 991px) {
@@ -8340,6 +8433,7 @@ img {
   span
   span {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media (max-width: 991px) {
@@ -8382,8 +8476,10 @@ img {
   border: 0;
   border-bottom: 0;
   border-radius: 0;
-  background: #2c2c2c;
-  color: var(--Teak);
+  /* background: #2c2c2c; */
+  background: var(--Teak);
+  color: #fff;
+  font-family: Comorant;
 }
 
 .wpo-project-single-area
@@ -8402,6 +8498,7 @@ img {
   .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-project-single-area
@@ -8410,6 +8507,7 @@ img {
   .wpo-contact-form-area
   .form-control::-moz-placeholder {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-project-single-area
@@ -8417,7 +8515,8 @@ img {
   .wpo-project-contact-area
   .wpo-contact-form-area
   .form-control::placeholder {
-  color: var(--Teak);
+  color: #fff;
+  font-family: Comorant;
 }
 
 .wpo-project-single-area
@@ -8426,6 +8525,7 @@ img {
   .wpo-contact-form-area
   textarea.form-control {
   height: 120px;
+  color: white;
 }
 
 .wpo-project-single-area
@@ -8433,8 +8533,10 @@ img {
   .wpo-project-contact-area
   .wpo-contact-form-area
   select.form-control {
-  background: #2c2c2c url(../images/select-icon2.png) no-repeat
-    calc(100% - 15px) center;
+  /* background: #2c2c2c url(../images/select-icon2.png) no-repeat
+    calc(100% - 15px) center; */
+  background: var(--Teak);
+  color: white;
 }
 
 .wpo-project-single-area
@@ -8577,12 +8679,14 @@ img {
 }
 
 .wpo-blog-pg-section .entry-meta ul li a {
-  /* color: var(--Teak); */
+  /* color: var(--Teak); font-family: Comorant; */
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-pg-section .entry-meta ul li a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-pg-section .entry-meta ul li i {
@@ -8672,6 +8776,7 @@ img {
 
 .wpo-blog-pg-section .post h3 a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-pg-section .post p {
@@ -8688,14 +8793,16 @@ img {
 .wpo-blog-pg-section .post a.read-more {
   text-decoration: underline;
   color: var(--Teak);
+  font-family: Comorant;
   text-transform: uppercase;
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
   font-size: 15px;
   font-weight: 600;
 }
 
 .wpo-blog-pg-section .post a.read-more:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-pg-section .entry-media img {
@@ -8757,6 +8864,7 @@ img {
   margin: 0;
   border-radius: 50%;
   color: var(--Teak);
+  font-family: Comorant;
   transition: all 0.3s;
   border: 0;
 }
@@ -8866,6 +8974,7 @@ img {
   font-size: 20px;
   font-size: 1.3333333333rem;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 @media screen and (min-width: 1200px) {
@@ -8953,10 +9062,12 @@ img {
 
 .wpo-blog-single-section .entry-meta ul li a {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .entry-meta ul li a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .entry-meta ul li i {
@@ -9071,6 +9182,7 @@ img {
 .wpo-blog-single-section .post blockquote {
   background-color: #2c2c2c;
   color: var(--Teak);
+  font-family: Comorant;
   font-size: 19px;
   padding: 65px;
   margin-top: 60px;
@@ -9104,6 +9216,7 @@ img {
   border: 2px solid #2c2c2c;
   background: #242323;
   color: var(--Teak);
+  font-family: Comorant;
   border-radius: 50%;
 }
 
@@ -9176,8 +9289,9 @@ img {
 
 .wpo-blog-single-section .tag-share .tag > span,
 .wpo-blog-single-section .tag-share-s2 .tag > span {
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
   color: var(--Teak);
+  font-family: Comorant;
   font-weight: 600;
   display: inline-block;
   padding-right: 15px;
@@ -9202,6 +9316,7 @@ img {
   display: inline-block;
   padding: 5px 18px;
   color: var(--Teak);
+  font-family: Comorant;
   background: #2c2c2c;
   border-radius: 5px;
   font-weight: 600;
@@ -9218,6 +9333,7 @@ img {
 .wpo-blog-single-section .tag-share .tag a:hover,
 .wpo-blog-single-section .tag-share-s2 .tag a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .tag-share-s2 {
@@ -9234,6 +9350,7 @@ img {
   background: none;
   text-decoration: underline;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .author-box {
@@ -9300,6 +9417,7 @@ img {
 
 .wpo-blog-single-section .author-box .social-link a:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .more-posts {
@@ -9418,6 +9536,7 @@ img {
   font-size: 14px;
   font-size: 0.9333333333rem;
   color: var(--Teak);
+  font-family: Comorant;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9440,6 +9559,7 @@ img {
 
 .wpo-blog-single-section .more-posts a:hover .post-control-link {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .comments-area {
@@ -9538,7 +9658,7 @@ img {
   text-transform: none;
   display: inline-block;
   padding-left: 5px;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 @media (max-width: 767px) {
@@ -9564,6 +9684,7 @@ img {
 
 .wpo-blog-single-section .comments-area .comment-reply-link:hover {
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .comment-respond {
@@ -9598,6 +9719,7 @@ img {
   box-shadow: none;
   transition: all 0.3s;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-blog-single-section .comment-respond form input:focus,
@@ -9755,6 +9877,7 @@ img {
   border-color: var(--Teak);
   background: transparent;
   color: var(--Teak);
+  font-family: Comorant;
 }
 
 .wpo-contact-pg-section form textarea {
@@ -9883,7 +10006,7 @@ img {
   text-align: center;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 40px;
-  background:var(--component_Color);
+  background: var(--component_Color);
 }
 
 .wpo-contact-pg-section .office-info .office-info-item .office-info-icon {
@@ -9895,11 +10018,11 @@ img {
   margin: 0 auto;
   border-radius: 50%;
 }
-.office-info-text{
+.office-info-text {
   color: white;
 }
 
-.office-info-text p{
+.office-info-text p {
   color: white;
 }
 
