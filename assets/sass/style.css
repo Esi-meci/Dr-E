@@ -159,6 +159,32 @@ body {
   font-family: Comorant !important;
 }
 
+.my-btn {
+  border-radius: 20px;
+  padding: 17px 75px 15px 25px;
+  height: 100%;
+  background: var(--Teak);
+  transition: opacity 0.5s ease-out;
+  /* opacity: 0; */
+  color: #fff;
+  border: none;
+  z-index: -1;
+  font-size: large;
+  font-family: Braker;
+}
+
+.entry-details {
+  margin-bottom: 30px;
+  /* padding-top: 30px; */
+}
+.entry-detail {
+  padding-top: 40px;
+}
+
+.lefts {
+  text-align: right;
+}
+
 @media (max-width: 767px) {
   body {
     font-size: 14px;
@@ -199,7 +225,7 @@ body.dark-theme {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   /* color: var(--Teak); */
   color: var(--main-text);
   line-height: 1.8em;
@@ -931,7 +957,7 @@ img {
 }
 
 .wpo-page-title .wpo-breadcumb-wrap ol li:after {
-  content: "/";
+  content: "|";
   position: relative;
   left: 7px;
 }
@@ -4742,8 +4768,6 @@ img {
   border-radius: 5px;
 }
 
-
-
 .wpo-site-footer
   .upper-contact-area
   .contact-grids
@@ -5239,7 +5263,8 @@ img {
 
 .wpo-about-area .wpo-about-exprience-wrap .wpo-about-exprience h2,
 .wpo-about-area-s2 .wpo-about-exprience-wrap .wpo-about-exprience h2 {
-  font-size: 140px;
+  font-size: 60px;
+  text-align: center;
   font-weight: 700;
   color: var(--main-bg);
 }
@@ -5511,7 +5536,7 @@ img {
   .grid-inner
   p {
   margin-bottom: 0;
-  color: #fff;
+  color: #000;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(5),
@@ -5537,7 +5562,7 @@ img {
   p {
   margin-bottom: 0;
   /* color: #00a9ff; */
-  color: #fff;
+  color: #000;
 }
 
 .wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(6),
@@ -5563,7 +5588,7 @@ img {
   p {
   margin-bottom: 0;
   /* color: #ad00ff; */
-  color: #fff;
+  color: #000;
 }
 
 /* 3.3 wpo-service-area */
@@ -7756,8 +7781,8 @@ img {
   select.form-control {
   /* background: #2c2c2c url(../images/select-icon2.png) no-repeat
     calc(100% - 15px) center; */
-    /* background-color: var(--Teak); */
-    width: 100%;
+  /* background-color: var(--Teak); */
+  width: 100%;
 }
 
 .wpo-service-single-area
@@ -8782,7 +8807,7 @@ img {
   line-height: 1.2em;
   font-weight: 600;
   margin: -0.27em 0 0.7em;
-  font-family: "Futura PT";
+  font-family: "Comorant";
   font-weight: 600;
 }
 
@@ -8855,6 +8880,7 @@ img {
 
 .wpo-blog-pg-section .format-standard {
   position: relative;
+  padding-top: 50px;
 }
 
 .wpo-blog-pg-section .format-standard:before {
@@ -10178,5 +10204,17 @@ img {
 
   .theme-btn:before {
     content: "\e628";
+  }
+}
+
+@media (min-width: 992px) {
+  .entry-media-work {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: end;
+  }
+  #images {
+    width: 68%;
   }
 }
