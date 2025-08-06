@@ -225,7 +225,7 @@ body.dark-theme {
 }
 
 p {
-  font-size: 20px;
+  font-size: 12px;
   /* color: var(--Teak); */
   color: var(--main-text);
   line-height: 1.8em;
