@@ -202,15 +202,25 @@
                       path through conception, pregnancy, postpartum, and early
                       parenting.
                     </p>
-                    <button class="my-btn open-modal-btn">Schedule Now</button>
+                    <button class="my-btn open-modal-btn" id="openModalBtn">
+                      Schedule Now
+                    </button>
                     <div class="modal" id="bookingModal">
                       <div class="modal-content">
-                        <button class="close-btn" id="closeModal">
+                        <button class="close-btn" id="closeModalBtn">
                           &times;
                         </button>
-                        <iframe
-                          src="https://wisniewskichiro.janeapp.com/"
-                        ></iframe>
+                        <h2>Redirecting to Booking</h2>
+                        <p>
+                          You are about to be redirected to our secure booking
+                          page.
+                        </p>
+                        <a
+                          href="https://wisniewskichiro.janeapp.com"
+                          target="_blank"
+                          class="proceed-btn"
+                          >Proceed to Booking</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -246,7 +256,7 @@
                       you reconnect with your purpose and voice.
                     </p>
                     <div class="lefts">
-                      <button class="my-btn">Schedule Now</button>
+                      <button class="my-btn" id="bookBtn">Schedule Now</button>
                     </div>
                   </div>
                 </div>
@@ -551,6 +561,10 @@
     <!-- end of page-wrapper -->
     <!-- All JavaScript files
     ================================================== -->
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Plugins for this template -->
