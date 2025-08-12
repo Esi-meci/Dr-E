@@ -139,6 +139,11 @@ html {
   --component_Color: #ab917b;
 }
 
+/* html, body {
+  min-height: 100%;
+  margin: 0;
+} */
+
 body {
   font-family: "Inter", sans-serif;
   /* color: var(--Teak); */
@@ -180,6 +185,20 @@ body {
   color: var(--Dahlia);
 }
 
+.ents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ents button {
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  width: 60%;
+  margin-bottom: 40px;
+}
+
 .entry-details {
   margin-bottom: 30px;
   /* padding-top: 30px; */
@@ -188,8 +207,22 @@ body {
   padding-top: 40px;
 }
 
-.lefts {
-  text-align: right;
+
+
+.calendly-wrapper {
+  border: 2px solid var(--Teak);
+  padding: 35px 10px 10px;
+  margin: auto;
+  background: #fafafa;
+  
+}
+
+.calendly-heading {
+  text-align: center;
+  font-size: 22px;
+  color: var(--Teak);
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
 @media (max-width: 767px) {
@@ -272,6 +305,10 @@ img {
   padding: 0 130px;
 }
 
+.odometer .odometer-formatting-mark {
+  display: none;
+}
+
 /* .books {
   min-height: 90vh;
 } */
@@ -280,6 +317,9 @@ img {
   height: 7rem;
 }
 
+.newslate {
+  padding-left: 30px;
+}
 
 /* .open-modal-btn {
   padding: 12px 24px;
@@ -3302,6 +3342,9 @@ img {
 .wpo-site-header .menu-close {
   display: none;
 }
+.wpo-site-header .side-top{
+  display: none;
+}
 
 @media (max-width: 991px) {
   .wpo-site-header {
@@ -3341,7 +3384,7 @@ img {
   }
 
   .wpo-site-header #navbar {
-    background: #1e1e1e;
+    background: var(--Dahlia);
     display: block !important;
     width: 300px;
     height: 100%;
@@ -3401,20 +3444,25 @@ img {
 
   .wpo-site-header .menu-close {
     display: block;
-    z-index: 99;
     background: none;
     text-align: center;
     color: #fff;
     border: 0;
     text-align: center;
     margin-left: auto;
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
     width: 40px;
+    border: 1px solid #fff;
+  }
+  .wpo-site-header .side-top {
+    display: flex;
+    z-index: 99;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
     height: 40px;
     line-height: 40px;
-    border: 1px solid #fff;
   }
 
   .wpo-site-header .slideInn {
@@ -5372,7 +5420,7 @@ img {
 @media (max-width: 575px) {
   .wpo-about-area .wpo-about-exprience-wrap .wpo-about-exprience h2,
   .wpo-about-area-s2 .wpo-about-exprience-wrap .wpo-about-exprience h2 {
-    font-size: 90px;
+    font-size: 50px;
   }
 }
 
@@ -5534,6 +5582,7 @@ img {
 .wpo-about-area-s2 .wpo-about-content .wpo-about-funfact .grid .grid-inner {
   padding-right: 5px;
   padding-left: 5px;
+  height: 96%;
 }
 
 @media (max-width: 1200px) {
@@ -10307,14 +10356,13 @@ img {
   }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .entry-media-work {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    align-items: end;
   }
   #images {
     width: 68%;
   }
-}
+} */

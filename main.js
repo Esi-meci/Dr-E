@@ -25,18 +25,28 @@ window.addEventListener("click", (e) => {
   }
 });
 
-window.onload = function () {
-  const bookBtn = document.getElementById("bookBtn");
+// window.onload = function () {
+// const bookBtn = document.getElementById("bookBtn");
 
-  bookBtn.addEventListener("click", function () {
-    if (window.Calendly) {
-      Calendly.initPopupWidget({
-        url: 'https://calendly.com/cherrychiro8'
-      });
-      console.log('calendly is here')
-    } else {
-      console.error('Calendly script not loaded yet.');
-    }
-    return false;
-  });
-};
+// bookBtn.addEventListener("click", function () {
+//   if (window.Calendly) {
+//     Calendly.initPopupWidget({
+//       url: "https://calendly.com/cherrychiro8",
+      
+//     });
+//     console.log("calendly is here");
+//   } else {
+//     console.error("Calendly script not loaded yet.");
+//   }
+//   return false;
+// });
+
+//  window.onload = function() {
+//     Calendly.initBadgeWidget({
+//       url: 'https://calendly.com/cherrychiro8',
+//       text: 'Schedule time with me',
+//       color: '#00a2ff',
+//       textColor: '#ffffff',
+//       branding: true
+//     });
+//  }

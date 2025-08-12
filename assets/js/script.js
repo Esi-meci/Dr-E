@@ -381,6 +381,9 @@
   /*------------------------------------------
       = FUNFACT
   -------------------------------------------*/
+  
+
+
   if ($(".odometer").length) {
     $(".odometer").appear();
     $(document.body).on("appear", ".odometer", function (e) {
