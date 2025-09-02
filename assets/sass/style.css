@@ -134,7 +134,7 @@ html {
   --Peony: #d1b8bd;
   --Aloe: #c0c5b5;
   --Dahlia: #e9dcb4;
-  --Teak: #030303;
+  --Teak: #ab917b;
   --main-text: rgb(14, 13, 13);
   --component_Color: #ab917b;
 }
@@ -202,6 +202,7 @@ body {
 }
 
 .entry-details {
+  margin-top: 30px;
   margin-bottom: 30px;
   /* padding-top: 30px; */
 }
@@ -8375,7 +8376,8 @@ img {
 }
 
 .wpo-blog-pg-section .entry-media img {
-  width: 100%;
+  width: 80%;
+  max-height: 26em;
 }
 
 .wpo-blog-pg-section .format-standard,
