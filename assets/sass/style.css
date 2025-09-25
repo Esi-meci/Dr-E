@@ -8200,6 +8200,10 @@ img {
   /*** format-video ***/
 }
 
+.entry-media .entry-media-work{
+
+}
+
 @media (min-width: 1440px) {
   .wpo-blog-pg-section .container {
     max-width: 1320px;
@@ -8374,8 +8378,11 @@ img {
 }
 
 .wpo-blog-pg-section .entry-media img {
-  width: 80%;
+  width: 85%;
   max-height: 26em;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wpo-blog-pg-section .format-standard,
