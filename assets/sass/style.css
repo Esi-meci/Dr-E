@@ -170,15 +170,12 @@ body {
   border-radius: 20px;
   height: 100%;
   background: var(--Teak);
-  transition: opacity 0.5s ease-out;
   color: #fff;
   border: none;
-  z-index: -1;
   font-family: Braker;
   padding: 12px 24px;
   font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out
+  transition: color 0.3s ease-in-out, opacity 0.5s ease-out transform 0.3s ease-in-out, background-color 0.3s ease-in-out
 }
 
 .my-btn:hover {
@@ -194,7 +191,7 @@ body {
   flex-direction: column;
 }
 
-.ents button {
+.ents > button {
   /* padding-left: 30px;
   padding-right: 30px; */
   width: 60%;
