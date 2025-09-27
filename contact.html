@@ -32,6 +32,9 @@
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/sass/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
 </head>
 
 <body>
@@ -117,7 +120,8 @@
                                                 <a href="#">Contact</a>
                                             </li>
                                             <li class="add">
-                                                <a class="theme-btn add" href="./assets/images/Dr E Resume (2).pdf" download>
+                                                <a class="theme-btn add" href="./assets/images/Dr E Resume (2).pdf"
+                                                    download>
                                                     Donwload Resume
                                                 </a>
                                             </li>
@@ -144,7 +148,7 @@
             <section class="wpo-page-title">
                 <div class="container">
                     <div class="row">
-                        
+
                         <div class="col col-xs-12">
                             <div class="wpo-breadcumb-wrap">
                                 <h2>Contact</h2>
@@ -162,18 +166,46 @@
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-10 offset-lg-1">
+                            <div class="wpo-contact-title">
+                                <h2>Get in Touch</h2>
+                                <p>Have questions, want to schedule an appointment, or simply wish to connect? I’d love
+                                    to hear from you.
+                                </p>
+                                <p>Dr. Elizabeth Wisniewski (Dr. E)
+                                    Somatic Chiropractor & Leadership Coach</p>
+                            </div>
                             <div class="office-info">
                                 <div class="row">
                                     <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
                                         <div class="office-info-item">
-                                            <div class="office-info-icon">
+                                            <!-- <div class="office-info-icon">
                                                 <div class="icon">
-                                                    <i class="fi flaticon-location"></i>
+                                                    <i class="fi fi-rr-share"></i>
+                                                </div>
+                                            </div> -->
+
+                                            <div class="social-wrapper office-info-icon">
+                                                <!-- Main Social Button -->
+                                                <div class="icon">
+                                                    <i class="fi fi-rr-share"></i>
+                                                </div>
+
+                                                <!-- Hidden Social Icons -->
+                                                <div class="social-icons">
+                                                    <!-- <a href="#"><i class="fi fi-brands-facebook"></i></a> -->
+                                                    <a href="https://linktr.ee/dr_elizabeth_wisniewski"><i
+                                                            class="fi fi-rr-globe"></i></a>
+                                                    <a href="https://dreamplanet.org/user/115"><i
+                                                            class="fi fi-rr-planet-moon"></i></a>
+                                                    <a
+                                                        href="https://www.linkedin.com/in/elizabeth-wisniewski-dc-phd-a9a62853"><i
+                                                            class="fi fi-brands-linkedin"></i></a>
                                                 </div>
                                             </div>
+
                                             <div class="office-info-text">
-                                                <h2>Address</h2>
-                                                <p>7 Green Lake Street Crawfordsville, IN 47933</p>
+                                                <h2>Social Media</h2>
+                                                <p>Connect with us on social media platform</p>
                                             </div>
                                         </div>
                                     </div>
@@ -186,8 +218,12 @@
                                             </div>
                                             <div class="office-info-text">
                                                 <h2>Email Us</h2>
-                                                <p>DR E@gmail.com</p>
-                                                <p>helloyou@gmail.com</p>
+                                                <p><a
+                                                        href="mailto:drelizabethwisniewski2025@gmail.com" style="color: white;">drelizabethwisniewski2025@gmail.com</a>
+                                                </p>
+                                                <p><a
+                                                        href="mailto:info.drelizabethwisniewski@yahoo.com" style="color: white;">info.drelizabethwisniewski@yahoo.com</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -199,18 +235,19 @@
                                                 </div>
                                             </div>
                                             <div class="office-info-text">
-                                                <h2>Call Now</h2>
-                                                <p>+1 800 123 456 789</p>
-                                                <p>+1 800 123 654 987</p>
+                                                <h2>Tel</h2>
+                                                <p><a href="tel:805-724-0750" style="color: white;"> Call :
+                                                        805-724-0750</a></p>
+                                                <p><a href="fax:805-456-0884" style="color: white;"> Fax :
+                                                        805-456-0884</a></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="wpo-contact-title">
-                                <h2>Have Any Question?</h2>
-                                <p>It is a long established fact that a reader will be distracted
-                                    content of a page when looking.</p>
+                                <h2>Contact Form</h2>
+                                <p>If you prefer to write, use the form below and I’ll respond as soon as possible</p>
                             </div>
                             <div class="wpo-contact-form-area">
                                 <form method="post" class="contact-validation-active" id="contact-form-main">
@@ -227,16 +264,22 @@
                                             placeholder="Adress">
                                     </div>
                                     <div>
-                                        <select name="service" class="form-control">
-                                            <option disabled="disabled" selected="">Services</option>
-                                            <option>Speaking Engagements</option>
-                                            <option>Guest Lecturing</option>
-                                            <option>Podcast Guest Appearances</option>
+                                        <select name="subject" class="form-control">
+                                            <option disabled="disabled" selected="">Subject</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Appointment Request">Appointment Request</option>
+                                            <option value="Coaching">Coaching</option>
+                                            <option value="Speaking">Speaking</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                     <div class="fullwidth">
                                         <textarea class="form-control" name="note" id="note"
                                             placeholder="Message..."></textarea>
+                                    </div>
+                                    <div class="fullwidth">
+                                        <input type="checkbox" name="consent" id="consent" style="width: 12px; display: inline; height: 12px; border: none;">
+                                        <label for="consent" style="display: inline; color: white; font-size: 14px;">By submitting, you consent to being contacted. I respect your privacy — no spam, ever</label>
                                     </div>
                                     <div class="submit-area">
                                         <button type="submit" class="theme-btn-s2">Get in Touch</button>

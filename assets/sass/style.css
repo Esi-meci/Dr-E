@@ -191,7 +191,7 @@ body {
   flex-direction: column;
 }
 
-.ents > button {
+.ents>button {
   /* padding-left: 30px;
   padding-right: 30px; */
   width: 60%;
@@ -8200,9 +8200,7 @@ img {
   /*** format-video ***/
 }
 
-.entry-media .entry-media-work{
-
-}
+.entry-media .entry-media-work {}
 
 @media (min-width: 1440px) {
   .wpo-blog-pg-section .container {
@@ -9598,6 +9596,9 @@ img {
   margin: 0 auto;
   border-radius: 50%;
 }
+.social-wrapper{
+  line-height: 110px !important;
+}
 
 .office-info-text {
   color: white;
@@ -9737,3 +9738,49 @@ img {
     width: 68%;
   }
 } */
+
+
+
+
+
+.social-icons {
+  display: none;
+  /* width: 10px; */
+  height: 35px;
+  line-height: 0px;
+  text-align: center;
+  margin: -18px auto 0;
+  /* border-radius: 50%; */
+  gap: 3px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.social-icons a {
+  background: #333;;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #f1f1f1;
+  color: #333;
+}
+
+.social-wrapper{
+  transition: transform 0.3s ease
+}
+
+.social-wrapper:hover .social-icons {
+  display: flex;
+}
+
+.social-wrapper:hover {
+  transform: translateY(-20px);
+}
+
