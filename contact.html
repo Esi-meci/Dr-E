@@ -252,7 +252,7 @@
                                 <h2>Contact Form</h2>
                                 <p>If you prefer to write, use the form below and I’ll respond as soon as possible</p>
                             </div>
-                            <div class="wpo-contact-title " style="margin-bottom: 20px;">
+                            <div class="wpo-contact-title " style="margin-bottom: 20px;" id="expect">
                                 <h2>What to Expect</h2>
                                 <p>I aim to reply to messages within 1–2 business days</p>
                             </div>
@@ -264,12 +264,14 @@
                                     </div>
                                     <div class="col-lg-6 list-widget-s" style="font-size: 12px; margin-bottom: 12px;">
                                         For coaching or speaking requests, feel free to include your vision or theme
-                                       
+
                                     </div>
                                 </div>
                             </div>
                             <div class="wpo-contact-form-area" style="margin-bottom: 50px;">
-                                <form method="post" class="contact-validation-active" id="contact-form-main">
+                                <form _captcha="false" method="POST" class="contact-validation-active"
+                                    id="contact-form-main" action="https://formsubmit.co/gowinmercy@gmail.com">
+                                    <!-- <form method="post" class="contact-validation-active" id="contact-form-main" action="https://formsubmit.co/drelizabethwisniewski2025@gmail.com"> -->
                                     <div>
                                         <input type="text" class="form-control" name="name" id="name"
                                             placeholder="Your Name*">
@@ -304,17 +306,22 @@
                                             spam, ever</label>
                                     </div>
                                     <div class="submit-area">
-                                        <button type="submit" class="theme-btn-s2">Get in Touch</button>
-                                        <div id="loader">
+                                        <button type="submit">Get in Touch</button>
+                                        <!-- <div id="loader">
                                             <i class="ti-reload"></i>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="clearfix error-handling-messages">
+                                    <!-- <div class="clearfix error-handling-messages">
                                         <div id="success">Thank you</div>
                                         <div id="error"> Error occurred while sending email. Please try again later.
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </form>
+                                <div id="popup">
+                                    <p>✅ Thank you! Your message has been sent.</p>
+                                    <button
+                                        onclick="document.getElementById('popup').style.display='none'">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -346,7 +353,7 @@
             <section class="wpo-contact-map-section">
                 <h2 class="hidden">Contact map</h2>
                 <div class="wpo-contact-map">
-                    <iframe
+                    <iframe style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5033039873906!2d-119.29845548469778!3d34.27464688056845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e821507f57ddf7%3A0x6f0b3c7b635e6b3b!2sVentura%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1706396580000"
                         allowfullscreen></iframe>
                 </div>
@@ -389,7 +396,7 @@
                                 </div>
                                 <div class="col col-lg-6">
                                     <div class="send-message-btn">
-                                        <a class="theme-btn" href="contact.html">Contact Us</a>
+                                        <a class="theme-btn" href="#expect">Contact Us</a>
                                     </div>
                                 </div>
                             </div>
@@ -443,7 +450,7 @@
                                         <li><a href="blog-fullwidth.html">Embodied Leadership</a></li>
                                         <li><a href="blog-fullwidth.html">Personal Coaching</a></li>
                                         <li><a href="blog-fullwidth.html">Speaking Engagements</a></li>
-                                        <li><a href="blog-fullwidth.html"> Guest Lecturing</a></li>
+                                        <li><a href="blog-fullwidth.html">Guest Lecturing</a></li>
                                         <li><a href="blog-fullwidth.html">Podcast Guest Appearances</a></li>
                                     </ul>
                                 </div>

@@ -667,62 +667,79 @@
   /*------------------------------------------
         = CONTACT FORM SUBMISSION
     -------------------------------------------*/
-  if ($("#contact-form-main").length) {
-    $("#contact-form-main").validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2,
-        },
+  // if ($("#contact-form-main").length) {
+  //   $("#contact-form-main").validate({
+  //     rules: {
+  //       name: {
+  //         required: true,
+  //         minlength: 2,
+  //       },
 
-        email: "required",
+  //       email: "required",
 
-        phone: "required",
+  //       phone: "required",
 
-        adress: "required",
+  //       adress: "required",
 
-        service: "required",
+  //       service: "required",
 
-        guest: "required",
+  //       guest: "required",
 
-        meal: "required",
-      },
+  //       meal: "required",
+  //     },
 
-      messages: {
-        name: "Please enter your name",
-        email: "Please enter your email address",
-        phone: "Please enter your phone number",
-        adress: "Please enter your adress",
-        service: "Please select your contact service",
-        guest: "Please select your guest Number",
-        meal: "Please select your Meal Name",
-      },
+  //     messages: {
+  //       name: "Please enter your name",
+  //       email: "Please enter your email address",
+  //       phone: "Please enter your phone number",
+  //       adress: "Please enter your adress",
+  //       service: "Please select your contact service",
+  //       guest: "Please select your guest Number",
+  //       meal: "Please select your Meal Name",
+  //     },
 
-      submitHandler: function (form) {
-        $.ajax({
-          type: "POST",
-          url: "mail-contact.php",
-          data: $(form).serialize(),
-          success: function () {
-            $("#loader").hide();
-            $("#success").slideDown("slow");
-            setTimeout(function () {
-              $("#success").slideUp("slow");
-            }, 3000);
-            form.reset();
-          },
-          error: function () {
-            $("#loader").hide();
-            $("#error").slideDown("slow");
-            setTimeout(function () {
-              $("#error").slideUp("slow");
-            }, 3000);
-          },
-        });
-        return false; // required to block normal submit since you used ajax
-      },
+  //     submitHandler: function (form) {
+  //       $.ajax({
+  //         type: "POST",
+  //         url: "mail-contact.php",
+  //         data: $(form).serialize(),
+  //         success: function () {
+  //           $("#loader").hide();
+  //           $("#success").slideDown("slow");
+  //           setTimeout(function () {
+  //             $("#success").slideUp("slow");
+  //           }, 3000);
+  //           form.reset();
+  //         },
+  //         error: function () {
+  //           $("#loader").hide();
+  //           $("#error").slideDown("slow");
+  //           setTimeout(function () {
+  //             $("#error").slideUp("slow");
+  //           }, 3000);
+  //         },
+  //       });
+  //       return false; // required to block normal submit since you used ajax
+  //     },
+  //   });
+  // }
+
+  const form = document.getElementById("contact-form-main");
+  const popup = document.getElementById("popup");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop normal form redirect
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+    }).then(response => {
+      if (response.ok) {
+        popup.style.display = "block"; // show popup
+        form.reset(); // clear form
+      }
     });
-  }
+  });
 
   /*==========================================================================
         WHEN DOCUMENT LOADING

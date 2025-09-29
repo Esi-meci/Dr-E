@@ -9596,7 +9596,8 @@ img {
   margin: 0 auto;
   border-radius: 50%;
 }
-.social-wrapper{
+
+.social-wrapper {
   line-height: 110px !important;
 }
 
@@ -9757,7 +9758,8 @@ img {
 }
 
 .social-icons a {
-  background: #333;;
+  background: #333;
+  ;
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -9772,7 +9774,7 @@ img {
   color: #333;
 }
 
-.social-wrapper{
+.social-wrapper {
   transition: transform 0.3s ease
 }
 
@@ -9782,5 +9784,60 @@ img {
 
 .social-wrapper:hover {
   transform: translateY(-20px);
+}
+
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup p {
+  font-family: Futura PT;
+  font-size: 17px;
+}
+
+#popup button, .submit-area button {
+  background: var(--Teak);
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 40px;
+  -webkit-backface-visibility: hidden;
+  z-index: 1;
+  font-size: 17px;
+  font-size: 1.0666666667rem;
+}
+
+#popup button{
+  color: brown;
+}
+
+#popup button::after{
+  content: '✖';
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.submit-area button:hover {
+background-color: #46bc69;
+/* color: #000; */
+}
+
+#popup button:hover {
+  background-color: red;
+  color: white;
 }
 
