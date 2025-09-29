@@ -9841,3 +9841,8 @@ background-color: #46bc69;
   color: white;
 }
 
+.past_edition{
+  text-align: center;
+  width: 85vw;
+  /* padding: 0; */
+}
