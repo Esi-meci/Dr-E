@@ -326,8 +326,9 @@
                                                 life and work.</p>
                                         </div>
                                         <div class="wpo-contact-form-area">
-                                            <form method="post" class="contact-validation-active"
-                                                id="contact-form-main">
+                                            <form _captcha="false" method="POST" class="contact-validation-active"
+                                                id="contact-form-main"
+                                                action="https://formsubmit.co/gowinmercy@gmail.com">
                                                 <div class="row">
                                                     <div class="col col-lg-6 col-md-6 col-12">
                                                         <input type="text" class="form-control" name="name" id="name"
@@ -338,11 +339,14 @@
                                                             placeholder="Your Email*">
                                                     </div>
                                                     <div class="col col-lg-12 col-12">
-                                                        <select name="service" class="form-control">
-                                                            <option disabled="disabled" selected="">Services</option>
-                                                            <option>Web Design</option>
-                                                            <option>Graphics Design</option>
-                                                            <option>Marketing</option>
+                                                        <select name="subject" class="form-control">
+                                                            <option disabled="disabled" selected="">Subject</option>
+                                                            <option value="General Inquiry">General Inquiry</option>
+                                                            <option value="Appointment Request">Appointment Request
+                                                            </option>
+                                                            <option value="Coaching">Coaching</option>
+                                                            <option value="Speaking">Speaking</option>
+                                                            <option value="Other">Other</option>
                                                         </select>
                                                     </div>
                                                     <div class="fullwidth col col-lg-12 col-12">
@@ -351,18 +355,25 @@
                                                     </div>
                                                 </div>
                                                 <div class="submit-area">
-                                                    <button type="submit" class="theme-btn">Contact Me Today</button>
-                                                    <div id="loader">
+                                                    <button type="submit">Contact Me Today</button>
+                                                    <!-- <div id="loader">
                                                         <i class="ti-reload"></i>
-                                                    </div>
+                                                    </div> -->
+                                                    <a href="blog-fullwidth.html#calendly" class="my_btn">Or Book From
+                                                        Calendly</button>
                                                 </div>
-                                                <div class="clearfix error-handling-messages">
+                                                <!-- <div class="clearfix error-handling-messages">
                                                     <div id="success">Thank you Massage Sended</div>
                                                     <div id="error"> Error occurred while sending email. Please try
                                                         again
                                                         later. </div>
-                                                </div>
+                                                </div> -->
                                             </form>
+                                            <div id="popup">
+                                                <p>✅ Thank you! Your message has been sent.</p>
+                                                <button
+                                                    onclick="document.getElementById('popup').style.display='none'">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
