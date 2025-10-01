@@ -5718,7 +5718,7 @@ img {
   border: 2px solid #373737;
   border-radius: 12px;
   text-align: center;
-  padding: 50px 40px;
+  padding: 70px 40px;
   margin-bottom: 30px;
 }
 
@@ -5726,7 +5726,8 @@ img {
 
   .wpo-service-area .wpo-service-wrap .wpo-service-item,
   .wpo-service-area-s2 .wpo-service-wrap .wpo-service-item {
-    padding: 30px 20px;
+    padding: 60
+    px 20px;
   }
 }
 
@@ -9813,7 +9814,7 @@ img {
   font-size: 17px;
 }
 
-#popup button, .submit-area button {
+#popup button, .submit-area button, .clearfix button{
   background: var(--Teak);
   color: #fff;
   display: inline-block;
@@ -9849,9 +9850,12 @@ background-color: #46bc69;
 }
 
 .past_edition{
-  text-align: center;
-  width: 85vw;
+  /* text-align: center; */
+  width: 100vw;
   /* padding: 0; */
+}
+.past_edition h2 {
+  text-align: center;
 }
 
 .my_btn{
@@ -9860,6 +9864,38 @@ background-color: #46bc69;
   cursor: pointer;
 }
 
-.my_btn:hover{
+.my_btn:hover {
   color: var(--Teak);
 }
+ 
+.new_form {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.new_form input {
+  width: 69vw;
+  height: 40px;
+}
+
+.wpo-service-item {
+  max-height: 400px;
+}
+.new_project{
+  /* border: 1px solid black; */
+  background-color: var(--Aloe);
+  padding: 30px 30px;
+}
+
+.my-newsletter-widget{
+  padding-bottom: 20px;
+}
+/* .first {
+  border: 1px solid black;
+} */
+ @media (min-width: 996px) {
+  
+   .about_testimonia {
+    margin-bottom: 280px;
+   }
+ }
