@@ -1307,13 +1307,13 @@ img {
 ------------------------------------*/
 /* .blog-sidebar {
   /*** search-widget ***/
-  /*** about-widget ***/
-  /*** category-widget ***/
-  /*** recent-post-widget ***/
-  /*** instagram-widget ***/
-  /*** wpo-newsletter-widget ***/
-  /*** tag-widget ***/
-  /*** wpo-contact-widget 
+/*** about-widget ***/
+/*** category-widget ***/
+/*** recent-post-widget ***/
+/*** instagram-widget ***/
+/*** wpo-newsletter-widget ***/
+/*** tag-widget ***/
+/*** wpo-contact-widget 
 } */
 
 @media screen and (min-width: 992px) {
@@ -5726,8 +5726,7 @@ img {
 
   .wpo-service-area .wpo-service-wrap .wpo-service-item,
   .wpo-service-area-s2 .wpo-service-wrap .wpo-service-item {
-    padding: 60
-    px 20px;
+    padding: 60 px 20px;
   }
 }
 
@@ -9814,7 +9813,9 @@ img {
   font-size: 17px;
 }
 
-#popup button, .submit-area button, .clearfix button{
+#popup button,
+.submit-area button,
+.clearfix button {
   background: var(--Teak);
   color: #fff;
   display: inline-block;
@@ -9829,19 +9830,19 @@ img {
   font-size: 1.0666666667rem;
 }
 
-#popup button{
+#popup button {
   color: brown;
 }
 
-#popup button::after{
+#popup button::after {
   content: '✖';
   font-size: 12px;
   padding-left: 10px;
 }
 
 .submit-area button:hover {
-background-color: #46bc69;
-/* color: #000; */
+  background-color: #46bc69;
+  /* color: #000; */
 }
 
 #popup button:hover {
@@ -9849,16 +9850,17 @@ background-color: #46bc69;
   color: white;
 }
 
-.past_edition{
+.past_edition {
   /* text-align: center; */
   width: 100vw;
   /* padding: 0; */
 }
+
 .past_edition h2 {
   text-align: center;
 }
 
-.my_btn{
+.my_btn {
   all: unset;
   color: green;
   cursor: pointer;
@@ -9867,12 +9869,13 @@ background-color: #46bc69;
 .my_btn:hover {
   color: var(--Teak);
 }
- 
+
 .new_form {
   display: flex;
   gap: 2vw;
   align-items: center;
 }
+
 .new_form input {
   width: 69vw;
   height: 40px;
@@ -9881,21 +9884,73 @@ background-color: #46bc69;
 .wpo-service-item {
   max-height: 400px;
 }
-.new_project{
+
+.new_project {
   /* border: 1px solid black; */
   background-color: var(--Aloe);
   padding: 30px 30px;
 }
 
-.my-newsletter-widget{
+.my-newsletter-widget {
   padding-bottom: 20px;
 }
+
 /* .first {
   border: 1px solid black;
 } */
- @media (min-width: 996px) {
-  
-   .about_testimonia {
+@media (min-width: 996px) {
+  .about_testimonia {
     margin-bottom: 280px;
-   }
- }
+  }
+}
+
+
+.newslatter-form {
+  background-image: url('../images/newslatter/newslatter\ background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 2.1rem;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.603);
+  /* background-color: linear-gradient(to left, rgba(255, 255, 255, 0.089), black, white); */
+  padding: 30px;
+}
+
+.overlay h2 {
+  color: white;
+}
+
+.newslatter-form form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newslatter-form input {
+  padding: 10px;
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* margin-right: 5%; */
+}
+
+.newslatter-form button {
+  /* padding: 0.6rem 2rem; */
+  width: 20%;
+  background-color: #ab917b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newslatter-form button:hover {
+  background-color: var(--Dahlia);
+  color: black;
+}

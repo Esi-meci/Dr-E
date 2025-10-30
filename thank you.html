@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0070ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background: #005a94;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>✅ Thank You for Your Purchase!</h2>
+        <p>Your payment was successful.</p>
+
+        <!-- Hidden by default -->
+        <a id="downloadLink" class="download-btn"
+            href="https://drive.google.com/drive/folders/1qSuunf5vV-dTH_4an6Nq1FTFp4it-7QS?usp=sharing" download hidden>
+            Download Your eBook
+        </a>
+
+        <p id="errorMsg" style="color: red; display: none;">
+            ⚠️ Downloads are only available after a successful payment.
+        </p>
+    </div>
+
+    <script>
+        // Check if the URL contains ?paid=true
+        const urlParams = new URLSearchParams(window.location.search);
+        const isPaid = urlParams.get('paid');
+        console.log(isPaid)
+
+        const downloadLink = document.getElementById('downloadLink');
+        const errorMsg = document.getElementById('errorMsg');
+
+        if (isPaid !== 'true') {
+            downloadLink.style.display = "none";
+            downloadLink.style.display = "block";
+            errorMsg.style.display = 'block';
+        } else {
+        }
+    </script>
+</body>
+
+</html>
